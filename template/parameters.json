@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "aks"
+        },
+        "location": {
+            "value": "westcentralus"
+        },
+        "dnsPrefix": {
+            "value": "aks-dns"
+        },
+        "kubernetesVersion": {
+            "value": "1.19.11"
+        },
+        "networkPlugin": {
+            "value": "azure"
+        },
+        "enableRBAC": {
+            "value": false
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "enableAzurePolicy": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "vnetSubnetID": {
+            "value": "/subscriptions/ec0aa5f7-9e78-40c9-85cd-535c6305b380/resourceGroups/aks-rg/providers/Microsoft.Network/virtualNetworks/aks-rg-vnet/subnets/default"
+        },
+        "serviceCidr": {
+            "value": "10.0.0.0/16"
+        },
+        "dnsServiceIP": {
+            "value": "10.0.0.10"
+        },
+        "dockerBridgeCidr": {
+            "value": "172.17.0.1/16"
+        },
+        "workspaceName": {
+            "value": "aks-la"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/ec0aa5f7-9e78-40c9-85cd-535c6305b380/resourceGroups/DefaultResourceGroup-WCUS/providers/Microsoft.OperationalInsights/workspaces/aks-la"
+        },
+        "workspaceRegion": {
+            "value": "westcentralus"
+        }
+    }
+}
